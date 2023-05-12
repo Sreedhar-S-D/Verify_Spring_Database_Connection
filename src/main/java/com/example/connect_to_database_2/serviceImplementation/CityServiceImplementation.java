@@ -7,6 +7,8 @@ import com.example.connect_to_database_2.service.CityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class CityServiceImplementation implements CityService {
 
@@ -16,6 +18,11 @@ public class CityServiceImplementation implements CityService {
     @Override
     public City getCityWithName(String cityName) {
         return cityRepository.findByName(cityName);
+    }
+
+    @Override
+    public List<City> getAllCities() {
+        return cityRepository.findAll();
     }
 
     @Override
