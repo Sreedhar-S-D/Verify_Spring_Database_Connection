@@ -13,10 +13,10 @@ public class CityServiceImplementation implements CityService {
     @Autowired
     CityRepository cityRepository;
 
-//    @Override
-//    public City getCityWithName(String cityName) {
-//        return cityRepository.findByName();
-//    }
+    @Override
+    public City getCityWithName(String cityName) {
+        return cityRepository.findByName(cityName);
+    }
 
     @Override
     public City createCityFromDTO(CityDTO cityDTO) {

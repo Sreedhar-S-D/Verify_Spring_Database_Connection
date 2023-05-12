@@ -6,7 +6,7 @@ import com.example.connect_to_database_2.model.City;
 
 public interface CityService {
 
-    public City createCityFromDTO(CityDTO cityDTO);
+    City createCityFromDTO(CityDTO cityDTO);
 
-//    City getCityWithName(String cityName);
+    City getCityWithName(String cityName);
 }

@@ -11,4 +11,3 @@ public class ConnectToDatabase2Application {
 	}
 
 }
-
